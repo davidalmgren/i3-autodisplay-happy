@@ -113,7 +113,7 @@ func getDisplayOptions(display config.Display, active bool) []string {
 func refreshDisplay(display config.Display) {
 	err := i3.UpdateWorkspaces(display)
 	if err != nil {
-		log.Fatalf("Error updating i3 workspaces: %s\n", err)
+		log.Println("Error updating i3 workspaces: %s\n", err)
 	}
 }
 
